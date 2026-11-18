@@ -1,0 +1,26 @@
+{
+  "name": "pricetrail",
+  "version": "1.0.0",
+  "description": "Multi-Platform E-commerce Price Comparison using React Native, Node.js & Cheerio",
+  "scripts": {
+    "server:install": "cd server && npm install",
+    "client:install": "cd client && npm install",
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm run dev",
+    "server:start": "cd server && npm start",
+    "client": "cd client && npm start",
+    "client:web": "cd client && npm run web"
+  },
+  "keywords": [
+    "react-native",
+    "nodejs",
+    "cheerio",
+    "web-scraping",
+    "price-comparison",
+    "amazon",
+    "flipkart",
+    "snapdeal"
+  ],
+  "author": "",
+  "license": "ISC"
+}
