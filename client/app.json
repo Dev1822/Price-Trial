@@ -17,7 +17,11 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.dev1822.client",
+      "permissions": [
+        "android.permission.INTERNET"
+      ]
     },
     "web": {
       "output": "static",
@@ -37,6 +41,16 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "7512292b-5e1e-4241-a4b4-55e2a60a2846"
+      }
     }
   }
 }

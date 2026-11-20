@@ -24,11 +24,6 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`===============================================`);
+app.listen(PORT, () => {
   console.log(`🚀 PriceTrail Comparison Server running!`);
-  console.log(`📍 Local:   http://localhost:${PORT}`);
-  console.log(`🌐 Network: http://10.236.231.240:${PORT}`);
-  console.log(`🔍 Try:     http://localhost:${PORT}/api/search?q=iphone+15`);
-  console.log(`===============================================`);
 });

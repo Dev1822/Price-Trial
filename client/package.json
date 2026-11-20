@@ -6,7 +6,6 @@
     "@expo/metro-runtime": "~58.0.17",
     "@expo/ui": "~58.0.28",
     "@expo/vector-icons": "^15.0.2",
-    "axios": "^1.7.9",
     "expo": "~58.0.25",
     "expo-constants": "~58.0.16",
     "expo-device": "~58.0.5",

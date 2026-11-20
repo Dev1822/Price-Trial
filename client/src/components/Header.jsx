@@ -1,10 +1,9 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { View, Text, StyleSheet } from 'react-native';
 import { useTheme } from '../theme/ThemeContext';
 
-export default function Header({ onOpenSettings }) {
-  const { theme, spacing, radii, typography } = useTheme();
+export default function Header() {
+  const { theme, typography } = useTheme();
 
   return (
     <View style={[styles.container, { backgroundColor: theme.colors.surface, borderBottomColor: theme.colors.border }]}>
@@ -16,25 +15,12 @@ export default function Header({ onOpenSettings }) {
           Compare Amazon · Flipkart · Snapdeal
         </Text>
       </View>
-
-      <TouchableOpacity
-        onPress={onOpenSettings}
-        style={[styles.settingsBtn, { borderRadius: radii.md }]}
-        accessibilityLabel="Settings"
-        accessibilityRole="button"
-        hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-      >
-        <Ionicons name="settings-outline" size={20} color={theme.colors.textSecondary} />
-      </TouchableOpacity>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
     paddingHorizontal: 16,
     paddingVertical: 12,
     borderBottomWidth: StyleSheet.hairlineWidth
@@ -49,11 +35,5 @@ const styles = StyleSheet.create({
   tagline: {
     marginTop: 2,
     fontWeight: '400'
-  },
-  settingsBtn: {
-    width: 44,
-    height: 44,
-    alignItems: 'center',
-    justifyContent: 'center'
   }
 });

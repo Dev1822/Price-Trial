@@ -1,23 +1,16 @@
-import React, { createContext, useContext, useState } from 'react';
-import { lightTheme, darkTheme, spacing, radii, typography } from './tokens';
+import React, { createContext, useContext } from 'react';
+import { theme, spacing, radii, typography } from './tokens';
 
 const ThemeContext = createContext({
-  theme: lightTheme,
-  isDark: false,
-  toggleTheme: () => {},
+  theme,
   spacing,
   radii,
   typography
 });
 
 export function ThemeProvider({ children }) {
-  const [isDark, setIsDark] = useState(false); // Default: Light theme
-
-  const toggleTheme = () => setIsDark(prev => !prev);
-  const theme = isDark ? darkTheme : lightTheme;
-
   return (
-    <ThemeContext.Provider value={{ theme, isDark, toggleTheme, spacing, radii, typography }}>
+    <ThemeContext.Provider value={{ theme, spacing, radii, typography }}>
       {children}
     </ThemeContext.Provider>
   );

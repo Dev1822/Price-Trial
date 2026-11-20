@@ -3,7 +3,7 @@
  * 
  * Design tokens for PriceTrail:
  * Mobile-first, utilitarian, calm shopping tool design system.
- * Light theme by default with clean dark theme support.
+ * Permanent light theme with neutral surfaces, 8pt grid, and 12px max radius.
  */
 
 export const spacing = {
@@ -48,8 +48,7 @@ export const typography = {
   }
 };
 
-export const lightTheme = {
-  isDark: false,
+export const theme = {
   colors: {
     background: '#f8fafc',
     surface: '#ffffff',
@@ -97,50 +96,4 @@ export const lightTheme = {
   }
 };
 
-export const darkTheme = {
-  isDark: true,
-  colors: {
-    background: '#0f172a',
-    surface: '#1e293b',
-    surfaceSubtle: '#334155',
-    surfaceHighlight: '#1e293b',
-    border: '#334155',
-    borderSubtle: '#475569',
-    borderStrong: '#64748b',
-    textPrimary: '#f8fafc',
-    textSecondary: '#cbd5e1',
-    textMuted: '#94a3b8',
-    textInverse: '#0f172a',
-    accent: '#14b8a6',          // Clean teal for dark
-    accentSubtle: 'rgba(20, 184, 166, 0.12)',
-    accentBorder: 'rgba(20, 184, 166, 0.3)',
-    success: '#22c55e',
-    warning: '#f59e0b',
-    warningBg: 'rgba(245, 158, 11, 0.1)',
-    warningBorder: 'rgba(245, 158, 11, 0.25)',
-    danger: '#ef4444',
-    dangerBg: 'rgba(239, 68, 68, 0.1)',
-    dangerBorder: 'rgba(239, 68, 68, 0.25)',
-    platforms: {
-      amazon: '#f59e0b',
-      flipkart: '#38bdf8',
-      snapdeal: '#f87171'
-    }
-  },
-  shadows: {
-    subtle: {
-      shadowColor: '#000000',
-      shadowOffset: { width: 0, height: 1 },
-      shadowOpacity: 0.2,
-      shadowRadius: 2,
-      elevation: 1
-    },
-    card: {
-      shadowColor: '#000000',
-      shadowOffset: { width: 0, height: 1 },
-      shadowOpacity: 0.25,
-      shadowRadius: 4,
-      elevation: 2
-    }
-  }
-};
+export const lightTheme = theme;

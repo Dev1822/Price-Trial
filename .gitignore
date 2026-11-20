@@ -13,6 +13,10 @@ web-build/
 # Environment and secrets
 .env
 .env*.local
+*/.env
+*/.env*.local
+!.env.example
+!*/.env.example
 
 # Logs
 *.log
