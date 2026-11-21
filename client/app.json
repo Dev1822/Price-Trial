@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "client",
-    "slug": "client",
+    "name": "Price Trial",
+    "slug": "price-trial",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
